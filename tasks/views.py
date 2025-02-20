@@ -8,4 +8,7 @@ def user_dashboard(request):
     return render(request, "dashboard/user-dashboard.html")
 
 def test(request):
-    return render(request, "test.html")
+    context = {
+        "dream": "I am comming to conqure"
+    }
+    return render(request, "test.html", context)
