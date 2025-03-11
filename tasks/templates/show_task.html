@@ -8,10 +8,11 @@
 <body>
     <div>
        <ol>
-            {% for project in projects %}
+            {% for task in tasks %}
                 <li>
-                    <p>{{project.name}}</p>
-                    <p>{{project.num_task}}</p>
+                    <p>{{task.description}}</p>
+                    <p>{{task.due_date}}</p>
+                    <p>{{task.is_completed}}</p>
                 </li>
             {% endfor %}
             </ol> 
